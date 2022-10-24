@@ -1,0 +1,2 @@
+DI-engine>=0.4.3
+git+http://github.com/rgal/gym-2048@master
