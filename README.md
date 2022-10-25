@@ -10,9 +10,16 @@ P.S.S. 想了解更多深度强化学习相关知识？快来 [DI-engine](https:
     <a href="https://github.com/opendilab/DI-1024"><img width="500px" height="auto" src="https://github.com/opendilab/DI-1024/blob/main/assets/di1024_demo.png"></a>
 </div>
 
+# News
+[WeChat] [今日忌加班，宜玩1024](https://opendilab.net/1024)
+
+# 使用指南
+
+- 在线网页版试玩 -> [传送门](https://opendilab.net/1024)
+
 # 更新计划
 
-- [ ] 网页在线版试玩
+- [x] 网页在线版试玩
 - [ ] 完整强化学习训练样例
 - [ ] 提供可供本地试玩的模型权重
 - [ ] 设计更有趣的人机对抗算法
