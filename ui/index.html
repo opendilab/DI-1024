@@ -34,8 +34,9 @@
 
     <div>
         <br/>
-        <input type="text" name="setting">
+        <input type="text" name="setting" id="add-text">
         <input type="submit" value="自定义关卡" id="add-button" class="add-button">
+        <a class="result-text" id="add-result-text"></a>
         <br/>
         例: 2,0,2,4,0,8,16,4,8,128,256,512,4,1024,2048,4096
     </div>
@@ -43,8 +44,7 @@
     <div class="game-container">
       <div class="game-message">
         <div class="lower">
-	        <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">再来一次</a>
+          <a id="retry-button" class="retry-button">再来一次</a>
         </div>
       </div>
 

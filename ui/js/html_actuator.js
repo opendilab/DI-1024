@@ -126,10 +126,10 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "你难倒了AI！游戏成功!" : "你输了！游戏失败!";
 
   this.messageContainer.classList.add(type);
-  this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  document.getElementById('retry-button').innerHTML = message;
 };
 
 HTMLActuator.prototype.clearMessage = function () {

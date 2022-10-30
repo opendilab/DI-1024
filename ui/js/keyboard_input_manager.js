@@ -84,7 +84,6 @@ KeyboardInputManager.prototype.listen = function () {
   this.bindButtonPress(".restart-button", this.restart);
   this.bindButtonPress(".hint-button", this.hint);
   this.bindButtonPress(".ai-button", this.mode);
-  this.bindButtonPress(".keep-playing-button", this.keepPlaying);
   this.bindButtonPress(".add-button", this.add);
 
   // Respond to swipe events
@@ -168,7 +167,24 @@ KeyboardInputManager.prototype.add = function (event) {
     for (var i=0; i<o.length; i++) {
         data[i] = o[i].value;
     }
-    this.emit("restartWithData", data[0]);
+
+    var err_flag = false;
+    var parsedData = data[0].split(',');
+    for (var i = 0; i < parsedData.length; i++) {
+      const value = parseInt(parsedData[i]);
+      if ((value < 0) || (value == 1) || ((value & (value - 1)) != 0)) {
+          console.log('illegal', i, value);
+          err_flag = true;
+          break;
+      }
+      parsedData[i] = value;
+    }
+    if (err_flag) {
+        document.getElementById('add-result-text').innerHTML = "无效自定义格式";
+    } else {
+        this.emit("restartWithData", parsedData);
+        document.getElementById('add-result-text').innerHTML = "自定义关卡成功";
+    }
 };
 
 KeyboardInputManager.prototype.keepPlaying = function (event) {

@@ -190,6 +190,7 @@ hr {
       color: #f9f6f2;
       height: 40px;
       line-height: 42px;
+      margin-top: 168px;
       margin-left: 9px; }
       .game-container .game-message a.keep-playing-button {
         display: none; }
@@ -535,6 +536,13 @@ hr {
 .add-button {
   background: #8f7a66;
   color: #f9f6f2;
+  }
+.result-text {
+  color: #8f7a66;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: none;
+  cursor: none;
   }
 
 .game-explanation {
