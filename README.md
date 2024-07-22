@@ -1,5 +1,7 @@
 # DI-1024：深度强化学习 + 1024游戏
 
+> 1024 游戏有时也被称为 [2048](https://en.wikipedia.org/wiki/2048_(video_game))。
+
 是人机协作共同解密，还是人机对抗捕捉 AI 背后的的种种虫（Bug）。欢迎一起回味二的幂次方，体验极客瞬间~
 
 P.S. 路过记得点个 star ![stars - di-1024](https://img.shields.io/github/stars/opendilab/di-1024?style=social) ，持续更新ing。
@@ -19,7 +21,7 @@ P.S.S. 想了解更多深度强化学习相关知识？快来 [DI-engine](https:
 
 # 训练指南
 
-可以用以下命令安装依赖的包：
+先用以下命令安装依赖的包：
 
 ```bash
 pip3 install -r requirements.txt
@@ -30,7 +32,7 @@ pip3 install -r requirements.txt
 在 1024 环境上快速训练一个 [MuZero](https://github.com/opendilab/LightZero/blob/main/lzero/policy/muzero.py) 智能体：
 
 ```bash
-cd LightZero
+cd DI-1024
 python3 -u agent/config/muzero_2048_config.py
 ```
 
@@ -39,7 +41,7 @@ python3 -u agent/config/muzero_2048_config.py
 在 1024 环境上快速训练一个 [StochasticMuZero](https://github.com/opendilab/LightZero/blob/main/lzero/policy/stochastic_muzero.py) 智能体：
 
 ```bash
-cd LightZero
+cd DI-1024
 python3 -u agent/config/stochastic_muzero_2048_config.py
 ```
 
