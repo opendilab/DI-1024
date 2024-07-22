@@ -21,7 +21,7 @@ chance_space_size = 16 * num_of_possible_chance_tile
 # ==============================================================
 
 atari_muzero_config = dict(
-    exp_name=f'data_muzero/game_2048_npct-{num_of_possible_chance_tile}_muzero_ns{num_simulations}_upc{update_per_collect}_rer{reanalyze_ratio}_bs{batch_size}_sslw2_seed0',
+    exp_name=f'data_game_2048_muzero_seed0',
     env=dict(
         stop_value=int(1e6),
         env_id=env_id,
@@ -65,7 +65,7 @@ atari_muzero_config = dict(
         ssl_loss_weight=2,  # default is 0
         n_episode=n_episode,
         eval_freq=int(2e3),
-        replay_buffer_size=int(1e6),  # the size/capacity of replay_buffer, in the terms of transitions.
+        replay_buffer_size=int(1e6),
         collector_env_num=collector_env_num,
         evaluator_env_num=evaluator_env_num,
     ),

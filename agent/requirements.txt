@@ -1,2 +1,3 @@
-DI-engine>=0.4.3
-git+http://github.com/rgal/gym-2048@master
+DI-engine>=0.5.2
+LightZero>=0.1.0
+

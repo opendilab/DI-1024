@@ -4,7 +4,7 @@
 
 P.S. 路过记得点个 star ![stars - di-1024](https://img.shields.io/github/stars/opendilab/di-1024?style=social) ，持续更新ing。
 
-P.S.S. 想了解更多深度强化学习相关知识？快来 [DI-engine](https://github.com/opendilab/DI-engine) 训练自己的智能体。
+P.S.S. 想了解更多深度强化学习相关知识？快来 [DI-engine](https://github.com/opendilab/DI-engine) 和 [LightZero](https://github.com/opendilab/LightZero) 训练自己的智能体。
 
 <div align="center">
     <a href="https://github.com/opendilab/DI-1024"><img width="500px" height="auto" src="https://github.com/opendilab/DI-1024/blob/main/assets/di1024_demo.png"></a>
@@ -17,10 +17,41 @@ P.S.S. 想了解更多深度强化学习相关知识？快来 [DI-engine](https:
 
 - 在线网页版试玩 -> [传送门](https://opendilab.net/1024)
 
+# 训练指南
+
+可以用以下命令安装依赖的包：
+
+```bash
+pip3 install -r requirements.txt
+```
+
+### MuZero 智能体训练
+
+在 1024 环境上快速训练一个 [MuZero](https://github.com/opendilab/LightZero/blob/main/lzero/policy/muzero.py) 智能体：
+
+```bash
+cd LightZero
+python3 -u agent/config/muzero_2048_config.py
+```
+
+### StochasticMuZero 智能体训练
+
+在 1024 环境上快速训练一个 [StochasticMuZero](https://github.com/opendilab/LightZero/blob/main/lzero/policy/stochastic_muzero.py) 智能体：
+
+```bash
+cd LightZero
+python3 -u agent/config/stochastic_muzero_2048_config.py
+```
+
+### 训练曲线
+
+![img.png](assets/2048_benchmark.png)
+
+
 # 更新计划
 
 - [x] 网页在线版试玩
-- [ ] 完整强化学习训练样例
+- [x] 完整强化学习训练样例
 - [ ] 提供可供本地试玩的模型权重
 - [ ] 设计更有趣的人机对抗算法
 - [ ] 结合 Stochastic MuZero 的最强 1024 游戏智能体
