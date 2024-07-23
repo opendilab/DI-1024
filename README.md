@@ -54,9 +54,9 @@ python3 -u agent/config/stochastic_muzero_2048_config.py
 
 - [x] 网页在线版试玩
 - [x] 完整强化学习训练样例
+- [x] 结合 Stochastic MuZero 的最强 1024 游戏智能体
 - [ ] 提供可供本地试玩的模型权重
 - [ ] 设计更有趣的人机对抗算法
-- [ ] 结合 Stochastic MuZero 的最强 1024 游戏智能体
 
 # 致谢
 - JS 前端部分主要基于 https://github.com/xwjdsh/2048-ai 进行魔改，请大家也多多支持这个 repo 
