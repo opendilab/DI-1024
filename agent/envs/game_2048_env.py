@@ -38,7 +38,7 @@ class Game2048Env(gym.Env):
       - Observation Space:
           The observation space is a 4x4 grid representing the game board. Each cell in the grid can contain a number from
           0 to 2048. The observation can be in different formats based on the 'obs_type' parameter in the environment configuration.
-          - If 'obs_type' is set to 'encode_observation' (default):
+          - If 'obs_type' is set to 'raw_encoded_board' (default):
               The observation is a 3D numpy array of shape (4, 4, 16). Each cell in the array is represented as a one-hot vector
               encoding the value of the tile in that cell. The one-hot vector has a length of 16, representing the possible tile
               values from 0 to 2048. The first element in the one-hot vector corresponds to an empty cell (0 value).
